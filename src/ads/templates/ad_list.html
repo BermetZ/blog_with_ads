@@ -1,7 +1,6 @@
 {% block content %}
     {% for ad in object_list %}
-<!--            <h1><a href="{% url 'ad_detail' pk=post.pk %}">{{ ad.title }}</a></h1>-->
             {{ ad.text }}
-<!--            <p>{{ post.company }}</p>-->
+            <p>{{ post.company }}</p>
     {% endfor %}
 {% endblock %}
