@@ -5,3 +5,5 @@ include
 lib
 
 db.sqlite3
+
+pip-selfcheck.json
