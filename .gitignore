@@ -1,1 +1,7 @@
 .idea
+.bin
+.env
+.include
+.lib
+
+db.sqlite3
