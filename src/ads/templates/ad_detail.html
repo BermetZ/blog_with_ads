@@ -1,0 +1,7 @@
+{% block content %}
+        <h1>{{ ad.title }}</h1>
+        <h2>{{ ad.text }}</h2>
+        <p><a href="{% url 'company_detail' pk=ad.company.pk %}">{{ ad.company.name }}</a></p>
+{% endblock %}
+
+

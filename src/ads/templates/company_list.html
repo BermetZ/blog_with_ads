@@ -1,0 +1,6 @@
+{% block content %}
+    {% for company in object_list %}
+            <h1><a href="{% url 'company_detail' pk=company.pk %}">{{ ad.title }}</a></h1>
+            <p>{{ post.company }}</p>
+    {% endfor %}
+{% endblock %}

@@ -1,6 +1,5 @@
-from django.db import models
 from django.conf import settings
-from django.utils import timezone
+from django.db import models
 
 
 class Company(models.Model):
@@ -22,10 +21,6 @@ class Ad(models.Model):
     text = models.TextField()
     company = models.ForeignKey(Company, related_name='company', on_delete=models.DO_NOTHING)
 
-    # def publish(self):
-    #     self.published_date = timezone.now()
-    #     self.save()
-
     def __str__(self):
         return self.title
 
@@ -33,3 +28,6 @@ class Ad(models.Model):
 class Comment(models.Model):
     text = models.TextField()
     post = models.ForeignKey(Ad, related_name='ad', on_delete=models.DO_NOTHING)
+
+    def __str__(self):
+        return self.text
