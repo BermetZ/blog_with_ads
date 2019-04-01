@@ -2,6 +2,7 @@
         <h1>{{ ad.title }}</h1>
         <h2>{{ ad.text }}</h2>
         <p><a href="{% url 'company_detail' pk=ad.company.pk %}">{{ ad.company.name }}</a></p>
+        <h3><a href="{% url 'comment_new' %}><button><add new comment></button>"</a></h3>
 {% endblock %}
 
 
